@@ -123,7 +123,7 @@
 
 
     // Plugin initialization
-    //$('.slider').slider({full_width: true});
+    $('.slider').slider({full_width: true});
     $('.parallax').parallax();
     $('.modal-trigger').leanModal();
     $('.scrollspy').scrollSpy();
