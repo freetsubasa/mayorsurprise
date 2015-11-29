@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta charset="utf-8" /
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+    title= current_page.data.title || "新竹市政府"
+    = stylesheet_link_tag "all"
+    = stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/css/swiper.css"
+    = javascript_include_tag "all"
+    = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/js/swiper.min.js"
+    = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/js/swiper.jquery.min.js"
+    = javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"
+  body class=page_classes
+    = yield

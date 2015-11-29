@@ -1,0 +1,11 @@
+.swiper-container.swiper-container-horizontal
+  .swiper-wrapper
+    - data.pic.each do |item|
+      .swiper-slide
+        a href="#"
+          img src="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style=("background-image: url(#{item.pic0_path})") /
+          span
+            .container
+              = item.title
+  .swiper-button-prev.swiper-button-white
+  .swiper-button-next.swiper-button-white

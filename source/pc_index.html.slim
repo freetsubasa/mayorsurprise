@@ -1,0 +1,57 @@
+---
+page_classes: pc_index
+---
+
+#nav-mobile.side-nav
+  = partial "drawer"
+
+.actionbar
+  .search-container
+    .container
+      .card style=("margin: 0; padding: 0;")
+        input#search/
+        i.fa.fa-search.fa-lg
+        a.normal_color.show-on-large data-activates="nav-mobile" data-action="sidenav" href="#"
+          i.fa.fa-bars.fa-lg
+  .container
+    .search-spacing
+    .logo-container
+      a href="pc_index.html"
+        img.responsive-img src="images/pc_logo.png" style=("padding: .2em 0 0;") /
+
+.marquee
+  .container
+    .marquee-container
+      i.fa.fa-bullhorn
+      | 總獎金17萬元官網設計大賽來囉！
+      | 歡迎組隊報名參加新竹黑客松競賽！
+
+.slide
+  = partial 'slides'
+
+.container.main-container
+  .row
+    - (data.announcement + data.news).each do |item|
+      .col.l4.m6.s12
+        .card
+          - if item.pic0_path.nil?
+            .card-content.time= item.post_date
+            .card-content
+              .card-title =item.title
+              p
+                = item.content[/[^\r\n]+/]
+                | ...
+          - else
+            .card-content.time style="position: absolute; top: 0; left: 0; right: 0; z-index: 1; color: #fff;"  =item.post_date
+            .card-image
+              img src=item.pic0_path
+              span.card-title style="background-color: rgba(0, 0, 0, 0.25)" = item.title
+          .card-action.right-align
+            a href="#" data-content=item.content.gsub(/\r?\n/, '<br/>') data-title=item.title 閱讀更多
+
+.news-modal.modal.modal-fixed-footer
+  .modal-content
+    h4
+    p
+  .modal-footer
+    a.waves-effect.btn-flat href="#" onClick="$('.news-modal').closeModal();return false;" 關閉

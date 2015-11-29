@@ -1,0 +1,75 @@
+$color_icon: #afafaf;
+body.pc_index, body.pc_mayor {
+  background: #eee;
+
+  .actionbar {
+    font-size: 20px;
+    padding: 1em 0 .2em;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+
+  .search-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-top: 1em;
+
+    $padding: .5em;
+    #search {
+      width: 100%;
+      border: 0;
+      padding: $padding (2 * $padding + 1.5em);
+      outline: none;
+    }
+    i.fa-search {
+      color: $color_icon;
+      position: absolute;
+      top: $padding;
+      right: $padding;
+    }
+    i.fa-bars {
+      color: $color_icon;
+      position: absolute;
+      top: $padding;
+      left: $padding;
+    }
+  }
+  .search-spacing {
+    height: 3em;
+  }
+
+  .marquee-container {
+    text-align: center;
+  }
+
+  .slide {
+    .swiper-slide a {
+      height: 350px;
+
+      @media(max-width: 1100px) {
+        height: 250px;
+      }
+      @media(max-width: 800px) {
+        height: 180px;
+      }
+    }
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .card .card-content .card-title {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  .card-content.time {
+    color: #666;
+    text-align: right;
+    padding: 5px;
+    padding-bottom: 0;
+  }
+}

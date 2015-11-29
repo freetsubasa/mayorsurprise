@@ -1,0 +1,45 @@
+---
+---
+
+header
+  .actionbar.z-depth-0-5
+    .container
+      .header-container
+        a.normal_color href="#" data-activates="drawer" data-action="sidenav"
+          i.fa.fa-bars.fa-2x
+        a href="/"
+          = image_tag "logo.png"
+
+      .search-container
+        .card.z-depth-0-5
+          input#search
+          i.fa.fa-search
+.actionbar-spacing
+
+#drawer.side-nav
+  = partial "drawer"
+
+.marquee
+  .container
+    .marquee-container
+      i.fa.fa-bullhorn
+      | 總獎金17萬元官網設計大賽來囉！歡迎組隊報名參加新竹黑客松競賽！
+
+.slide
+  = partial 'slides'
+
+ul.news.main-container
+  - (data.announcement + data.news).each do |item|
+    li
+      a.normal_color href="#" data-content=item.content.gsub(/\r?\n/, '<br/>') data-title=item.title
+        .container
+          h1= item.title
+          span= item.unit
+          span.time= item.post_date
+
+.news-modal.modal.modal-fixed-footer
+  .modal-content
+    h4 style="font-size: 24px;"
+    p
+  .modal-footer
+    a.waves-effect.btn-flat href="#" onClick="$('.news-modal').closeModal();return false;" 關閉
