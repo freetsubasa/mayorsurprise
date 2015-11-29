@@ -1,0 +1,49 @@
+
+/* line 18, /Users/Davy/Code/mayor_jump_out/source/stylesheets/all.css.scss */
+a.normal_color, a.normal_color:hover, a.normal_color:focus, a.normal_color:visited {
+	color: inherit;
+}
+
+/* line 23, /Users/Davy/Code/mayor_jump_out/source/stylesheets/all.css.scss */
+.z-depth-0-5 {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 51, /Users/Davy/Code/mayor_jump_out/source/stylesheets/all.css.scss */
+.search-container {
+	color: black;
+}
+
+/* line 53, /Users/Davy/Code/mayor_jump_out/source/stylesheets/all.css.scss */
+.search-container .card {
+	position: relative;
+	margin: 0.5rem 0 0 0;
+}
+
+/* line 58, /Users/Davy/Code/mayor_jump_out/source/stylesheets/all.css.scss */
+.search-container .card #search {
+	width: 100%;
+	border: 0;
+	padding: 0.5em 2em 0.5em;
+	outline: none;
+}
+
+/* line 64, /Users/Davy/Code/mayor_jump_out/source/stylesheets/all.css.scss */
+.search-container .card i.fa-search {
+	color: #afafaf;
+	position: absolute;
+	top: 0.5em;
+	right: 0.5em;
+}
+
+.search-container .card i.fa-bars {
+	color: #afafaf;
+	position: absolute;
+	top: 0.5em;
+	left: 0.5em;
+}

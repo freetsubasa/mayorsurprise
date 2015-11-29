@@ -8,7 +8,9 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/css/swiper.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/js/swiper.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/js/swiper.jquery.min.js" type="text/javascript"></script>
@@ -34,38 +36,42 @@
   </script>
   </head>
 
-  <body>
-    <nav>
-      <div class="nav-wrapper">
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="http://www.hccg.gov.tw/web/SG?pageID=25967&FP=D40000001852000007_0">市府介紹</a></li>
-          <li><a href="http://www.hccg.gov.tw/web/News?FP=D40000001852000008_0">公開資訊</a></li>
-          <li><a href="http://www.hccg.gov.tw/web/SG?pageID=27622&FP=D40000001852000009_3">便民服務</a></li>
-          <li><a href="http://www.hccg.gov.tw/web/SG?pageID=27607&FP=D40000001852000011_0">機關網站</a></li>
-          <li><a href="http://www.hccg.gov.tw/web/SelfPageSetup?command=display&pageID=19722&FP=D40000001852000010_0">認識新竹</a></li>
-          <li><a href="http://www.hccg.gov.tw/web/SG?pageID=27606&FP=D40000001852000012_0">網網相連</a></li>
-          <hr>
-          <li><a href="#">30051 新竹市中正路120號 總機： 03-5216121</a></li>
-          <li><a href="#">服務時間：週一至週五8：00~12：00，13：00~17：00</a></li>
-          <li><a href="#">新竹市政府 1999服務專線(24小時服務 全年無休)</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="mdi-navigation-menu white-text"></i></a>
-        <div class="row">
-          <form class="col s11">
-            <div class="input-field">
-              <input id="search" type="search" required>
-              <label for="search"><i class="material-icons right-align">search</i></label>
-              <i class="material-icons">close</i>
-            </div>
-          </form>
-        </div>
-      </div>
-    </nav>
+	<body>
+			<div class="nav-wrapper">
+				<ul id="nav-mobile" class="side-nav">
+					<li><a href="http://www.hccg.gov.tw/web/SG?pageID=25967&FP=D40000001852000007_0">市府介紹</a></li>
+					<li><a href="http://www.hccg.gov.tw/web/News?FP=D40000001852000008_0">公開資訊</a></li>
+					<li><a href="http://www.hccg.gov.tw/web/SG?pageID=27622&FP=D40000001852000009_3">便民服務</a></li>
+					<li><a href="http://www.hccg.gov.tw/web/SG?pageID=27607&FP=D40000001852000011_0">機關網站</a></li>
+					<li><a href="http://www.hccg.gov.tw/web/SelfPageSetup?command=display&pageID=19722&FP=D40000001852000010_0">認識新竹</a></li>
+					<li><a href="http://www.hccg.gov.tw/web/SG?pageID=27606&FP=D40000001852000012_0">網網相連</a></li>
+					<hr>
+					<li><a href="#">30051 新竹市中正路120號 總機： 03-5216121</a></li>
+					<li><a href="#">服務時間：週一至週五8：00~12：00，13：00~17：00</a></li>
+					<li><a href="#">新竹市政府 1999服務專線(24小時服務 全年無休)</a></li>
+				</ul>
+			</div>
+		<div style="background: #ee6e73; font-size: 20px; padding: 1em 0 .8em;" class="randA">
+			<div class="container">
+				<div class="search-container">
+					<div class="card z-depth-0-5" style="margin: 0; padding: 0;">
+						<input id="search">
+						<i class="fa fa-search fa-lg"></i>
+						<a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="fa fa-bars fa-lg"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
     <div class="row">
-      <img class="responsive-img" src="images/logo.png">
-      <div class="col s12 amber darken-2 center-align">
-        <p class="white-text">這裡是公告，要放十個字</p>
-      </div>
+			<div style="background-color: #ee6e73; text-align: center;" class="randB">
+				<img class="responsive-img" src="images/logo.png" style="padding: .2em 0 1em;">
+				<div class="col s12 amber darken-2 center-align">
+					<p class="white-text">這裡是公告，要放十個字</p>
+				</div>
+		</div>
+		<script>
+			$(function() {$('.randA, .randB').css("background", ["#4f67a3", "#ee6e73", "#009688"][Math.floor(Math.random() * 3)])});
+		</script>
 <div class="slider col s12">
     <ul class="slides">
       <li>
